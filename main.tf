@@ -49,7 +49,7 @@ resource "aws_iam_role" "spacelift_role" {
   "Action": "sts:AssumeRole",
   "Condition": {
     "StringEquals": {
-      "sts:ExternalId": "zuplon@01JPMH1QMWAHC348V7H1M8XBV9@avinash_prompt3-2@write"
+      "sts:ExternalId": "zuplon@01JPMH1QMWAHC348V7H1M8XBV9@${var.stack_id}@write"
     }
   },
   "Effect": "Allow",
